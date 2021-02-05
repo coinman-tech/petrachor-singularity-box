@@ -21,7 +21,7 @@ Your master passphrase will secure all accounts inside your wallet. If you do no
 
 Create additional accounts, by repeating this step.
 
-# Starte a mining node:
+# Start a mining node:
 
 singularity run ptaminer_v1.simg /petrachor/build/petrachor/./petrachor -j -m on -a "your pta address"
 
