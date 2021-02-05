@@ -15,7 +15,7 @@ Use a strong master passphrase. If your wallet is ever compromised, this passphr
 
 # Creating a petrachor account:
 
-singularity run ptaminer_v1.simg /petrachor/build/petrachor-key/./petrachor-key new <name>
+singularity run ptaminer_v1.simg /petrachor/build/petrachor-key/./petrachor-key new "give a name"
   
 Your master passphrase will secure all accounts inside your wallet. If you do not want a key passphrase, you can safely skip the key passphrase by leaving it blank.
 
