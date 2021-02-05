@@ -1,0 +1,13 @@
+1 Install docker
+2 Install singularity
+2 Install neurodocker  (https://github.com/ReproNim/neurodocker)
+3 Create the singularity recepy
+
+sudo docker run --rm repronim/neurodocker generate singularity --base=debian:stretch --pkg-manager=apt --install git curl wget build-essential libleveldb-dev libmicrohttpd-dev cargo -r 'wget https://github.com/Kitware/CMake/releases/download/v3.14.5/cmake-3.14.5-Linux-x86_64.tar.gz' -r 'tar xfvz cmake-3.14.5-Linux-x86_64.tar.gz' -r 'cp -r cmake-3.14.5-Linux-x86_64/bin /usr/ && cp -r cmake-3.14.5-Linux-x86_64/share /usr/ && cp -r cmake-3.14.5-Linux-x86_64/doc /usr/share/ && cp -r cmake-3.14.5-Linux-x86_64/man /usr/share/' -r 'git clone --recursive https://github.com/petrachor/petrachor.git && cd petrachor && mkdir build && cd build && cmake .. && cmake --build .' > ptasingularity
+
+
+4 Build the singularity container
+
+singularity build ptaminer_v1.simg ptasingularity
+
+You are all set !
