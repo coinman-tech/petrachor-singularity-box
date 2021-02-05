@@ -9,13 +9,13 @@ https://www.dropbox.com/s/fselydzrlopllnr/ptaminer_v1.simg?dl=0
 
 # Creating a Wallet:
 
-singularity run ptaminer_v1.simg /petrachor/build/petrachor-key/ ./petrachor-key createwallet
+singularity run ptaminer_v1.simg /petrachor/build/petrachor-key/./petrachor-key createwallet
 
 Use a strong master passphrase. If your wallet is ever compromised, this passphrase will be its only security.
 
 # Creating a petrachor account:
 
-singularity run ptaminer_v1.simg /petrachor/build/petrachor-key/ ./petrachor-key new <name>
+singularity run ptaminer_v1.simg /petrachor/build/petrachor-key/./petrachor-key new <name>
   
 Your master passphrase will secure all accounts inside your wallet. If you do not want a key passphrase, you can safely skip the key passphrase by leaving it blank.
 
@@ -23,7 +23,7 @@ Create additional accounts, by repeating this step.
 
 # Starting mining node:
 
-singularity run ptaminer_v1.simg /petrachor/build/petrachor/ ./petrachor -j -m on -a <your address>
+singularity run ptaminer_v1.simg /petrachor/build/petrachor/./petrachor -j -m on -a <your address>
 
 
 If it was really helpful, please consider sharing some PTA with me. Thank you.
