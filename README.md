@@ -7,13 +7,13 @@ ref: https://petrachor.com/ and
 
 https://www.dropbox.com/s/fselydzrlopllnr/ptaminer_v1.simg?dl=0
 
-# Creating a Wallet:
+# Create a Wallet:
 
 singularity run ptaminer_v1.simg /petrachor/build/petrachor-key/./petrachor-key createwallet
 
 Use a strong master passphrase. If your wallet is ever compromised, this passphrase will be its only security.
 
-# Creating a petrachor account:
+# Create a petrachor account:
 
 singularity run ptaminer_v1.simg /petrachor/build/petrachor-key/./petrachor-key new "give a name"
   
@@ -21,7 +21,7 @@ Your master passphrase will secure all accounts inside your wallet. If you do no
 
 Create additional accounts, by repeating this step.
 
-# Starting mining node:
+# Starte a mining node:
 
 singularity run ptaminer_v1.simg /petrachor/build/petrachor/./petrachor -j -m on -a <your address>
 
