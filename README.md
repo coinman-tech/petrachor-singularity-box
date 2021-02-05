@@ -23,7 +23,7 @@ Create additional accounts, by repeating this step.
 
 # Starte a mining node:
 
-singularity run ptaminer_v1.simg /petrachor/build/petrachor/./petrachor -j -m on -a <your address>
+singularity run ptaminer_v1.simg /petrachor/build/petrachor/./petrachor -j -m on -a "your pta address"
 
 
 If it was really helpful, please consider sharing some PTA with me. Thank you.
